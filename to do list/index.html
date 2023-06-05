@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do list</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+<body>
+  <div class="main">
+    <h1><i class="fas fa-book-open text-primary"></i> my <span class="text-success">  todo </span>list</h1>
+    <i class="fas fa-camera">this is a camera</i>
+   
+    <form  id="todo-form">
+        <div class="form-group ">
+            <label for="todo">to do</label>
+            <input type="text" id="todo" class="form-control " placeholder="write what you want to do">
+        </div>
+        <div class="form-group">
+            <label for="time">Time</label>
+            <input type="text" id="time" class="form-control " placeholder="the time you want do it ex=12:45">
+        </div>
+        <input type="submit" value="Done!" class="btn btn-primary" id="subbtn">
+    </form>
+   
+    <input type="text" value="Add new one" class="btn btn-primary" id="addbtn">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>todo</th>
+                <th>time</th>
+                <th>check</th>
+                <th></th>
+            </tr>
+           
+        </thead>
+        <tbody id="todo-list">
+
+        </tbody>
+    </table>
+</div>
+</body>
+<script src="./script.js"></script>
+</html>
